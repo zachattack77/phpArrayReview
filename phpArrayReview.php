@@ -5,9 +5,14 @@
 + * Date: 2/22/2018
 + */
 +
-+$animals = array("panda", "alpaca", "boa");
-+
-+function printAnimals($animals)
-+{
-    +
-    +}
+ function printAnimals($animals)
+ {
+     +    sort($animals);
+
+     -}
++    for($i = 0; $i < count($animals); $i++)
+    +    {
+    +        echo $animals[$i] . " ";
++    }
++}
++printAnimals($animals);
